@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body{
+      border: 2px solid black;
+      background-image: url("https://th.bing.com/th/id/OIP.-BOJW5ms8PeypdFXGANX6gHaE6?w=253&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+      background-size: cover;     /* Scale image to cover entire background */
+      background-repeat: no-repeat; /* Prevent image from repeating */
+      background-position: center; 
+
+    }
+  </style>
+</head>
+<center>
+<body>
+  <h1 class="title">Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-btns">
+    <button data-filter="all" style="background-color: aqua;">All</button>
+    <button data-filter="nature" style="background-color: blue;">Nature</button>
+    <button data-filter="animals" style="background-color: yellow;">Animals</button>
+    <button data-filter="architecture" style="background-color: blue;">Architecture</button>
+    <button data-filter="flowers" style="background-color: lawngreen;"> flowers</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gallery-item nature"><img src="https://picsum.photos/id/1015/400/300" alt="Nature"></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/237/400/300" alt="Dog"></div>
+    <div class="gallery-item architecture"><img src="https://picsum.photos/id/1025/400/300" alt="Building"></div>
+    <div class="gallery-item nature"><img src="https://picsum.photos/id/1021/400/300" alt="Forest"></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/1024/400/300" alt="Cat"></div>
+    <div class="gallery-item architecture"><img src="https://picsum.photos/id/1008/400/300" alt="Bridge"></div>
+    <div class="gallery-item flowers"> <img src="https://th.bing.com/th/id/OIP.CDav17jZpx1vs0tnEx4lWAHaE_?w=223&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Flower3"></div>
+<div class="gallery-item flowers " style="height: 100px;width: 100px;"> <img src="https://media.istockphoto.com/id/2157071679/photo/aerial-view-of-pink-flowers-on-a-mountain-with-a-bird-during-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=Meszz0RrN2U1ir_b_iiPVUdcx3E4HGm58B6wODHvYPc=" width="400" height="100" alt=""></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview" />
+    <button class="nav prev">&lt;</button>
+    <button class="nav next">&gt;</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body></center>
+</html>
